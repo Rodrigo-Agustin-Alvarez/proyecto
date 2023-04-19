@@ -71,11 +71,9 @@ li{
 .body-tienda{
     width: 100%;
     display: grid;
-    margin-top: 5em;
 
 }
 .card{
-    width: 18em;
     box-shadow: 4px 4px;
 }
 .card-img-top{
@@ -84,10 +82,11 @@ li{
 }
 .card-container {
     width: 100%;
-    margin-top: 5em;
+    margin-top: 100px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
+    gap: 30px;
   }
   .img-carrito{
     width: 28px;
@@ -127,9 +126,6 @@ li{
     .titulo{
         font-size: 35px;
     }
-    .card-container{
-        grid-template-columns: 1fr;
-    }
     .card{
         width: 15em;
     }
@@ -137,6 +133,19 @@ li{
         height: auto;
     }
 
+}
+@media  (max-width: 1200px){
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media  (max-width: 600px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+    .card{
+        width: 100%;
+    }
 }
 
 
