@@ -1,0 +1,95 @@
+[{
+    "nombre": "Barcos en el mar",
+    "tamaño": "40 x 50 cm",
+    "precio": 200,
+    "id": 1,
+    "descripcion": "Cuadro impresionista, barco a vela navegando en calma mar.",
+    "imagen": "/componentes/Items/imagenes/barco-pirata.jpg"
+  },
+  {
+    "nombre": "Las flores de mesa",
+    "tamaño": "30 x 40 cm",
+    "precio": 150,
+    "id": 2,
+    "descripcion": "Naturaleza muerta, flores vibrantes en elegante florero de madera.",
+    "imagen": "/componentes/Items/imagenes/flores.jpg"
+  },
+  {
+    "nombre": "La persistencia",
+    "tamaño": "50 x 60 cm",
+    "precio": 250,
+    "id": 3,
+    "descripcion": "Explosión de color, vibrante mezcla de tonos y matices.",
+    "imagen": "/componentes/Items/imagenes/guitarra.jpg"
+  },
+  {
+    "nombre": "Florero",
+    "tamaño": "20 x 25 cm",
+    "precio": 80,
+    "id": 4,
+    "descripcion": "Jardín floreciente, explosión de color en la naturaleza.",
+    "imagen": "/componentes/Items/imagenes/flores-chicas.jpg"
+  },
+  {
+    "nombre": "Mujer",
+    "tamaño": "60 x 70 cm",
+    "precio": 300,
+    "id": 5,
+    "descripcion": "Mujer surreal, melena rosa y celeste en ambiente onírico.",
+    "imagen": "/componentes/Items/imagenes/mujer-colores.jpg"
+  },
+  {
+    "nombre": "Las ovejas",
+    "tamaño": "35 x 45 cm",
+    "precio": 180,
+    "id": 6,
+    "descripcion": "Paisaje rural, suaves colinas, cielo azul y ovejas pastoriles.",
+    "imagen": "/componentes/Items/imagenes/ovejitas.jpg"
+  },
+  {
+    "nombre": "Las costas",
+    "tamaño": "70 x 80 cm",
+    "precio": 350,
+    "id": 7,
+    "descripcion": "Costa escarpada, rocas bañadas por mar bravío y solitario.",
+    "imagen": "/componentes/Items/imagenes/paisaje-arroyo.jpg"
+  },
+  {
+    "nombre": "Stonehenge",
+    "tamaño": "50 x 70 cm",
+    "precio": 280,
+    "id": 8,
+    "descripcion": "Misterio ancestral, círculos de piedra y leyendas perdidas.",
+    "imagen": "/componentes/Items/imagenes/piedras.jpg"
+  },
+  {
+    "nombre": "Las vacas",
+    "tamaño": "30 x 30 cm",
+    "precio": 120,
+    "id": 9,
+    "descripcion": "Paisaje campestre, serenas vacas pastando en prado verde",
+    "imagen":"/componentes/Items/imagenes/vacas.jpg"
+  },  {
+    "nombre": "Benecia",
+    "tamaño": "40 x 50 cm",
+    "precio": 200,
+    "id": 10,
+    "descripcion": "Encanto italiano, canal pintoresco y arquitectura histórica en Venecia.",
+    "imagen": "/componentes/Items/imagenes/benecia.jpg"
+  },
+  {
+    "nombre": "Romeo y Juli",
+    "tamaño": "30 x 40 cm",
+    "precio": 150,
+    "id": 11,
+    "descripcion": "Amor trágico, romance prohibido en Verona renacentista.",
+    "imagen": "/componentes/Items/imagenes/europa.jpg"
+  },
+  {
+    "nombre": "La manchas",
+    "tamaño": "50 x 60 cm",
+    "precio": 250,
+    "id": 12,
+    "descripcion": "Abstracción cromática, manchas y trazos de intenso colorido.",
+    "imagen":"/componentes/Items/imagenes/manchas.jpg"
+  }]
