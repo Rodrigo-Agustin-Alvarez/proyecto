@@ -1,5 +1,6 @@
 import { useState } from "react"
 import '../../css/style.css'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Count = ({stock,initial,onAdd}) => {
     const [quantity,setQuantity] = useState(initial)
@@ -17,11 +18,11 @@ const Count = ({stock,initial,onAdd}) => {
         <div className="box-count">
              <h4 className="h4number">{quantity}</h4>
             <div className="box-flex">
-            <button className="menos" onClick={decrement}>-</button>
+            <button className="btn btn-outline-primary menos" type="button" onClick={decrement}>-</button>
             <div>
-            <button className="añadir" onClick={()=> onAdd(quantity)}disabled={!stock}>Agregar al carrito</button>
+            <button className="btn btn-primary" type="button" onClick={()=> onAdd(quantity)}disabled={!stock}>Agregar al carrito</button>
             </div>
-            <button className="mas" onClick={increment}>+</button>          
+            <button className="btn btn-outline-primary mas" type="button" onClick={increment}>+</button>          
             </div>
         </div>
     ) 

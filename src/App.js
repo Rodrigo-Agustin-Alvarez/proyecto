@@ -5,6 +5,7 @@ import ItemListContainer from './componentes/itemListContainer/itemListContainer
 
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import QuienesSomos from './componentes/QuienesSomos/QS';
+import VerDescripcion from './componentes/itemDescripcion/Descripcion';
 
 
 
@@ -17,9 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<ItemListContainer/>}/>
         <Route path='/QuienesSomos' element={<QuienesSomos/>}/>
-        
+        <Route path='/Descripcion/:id' element={<VerDescripcion/>}/>       
       </Routes>
-
       </BrowserRouter>
     </div>
   );

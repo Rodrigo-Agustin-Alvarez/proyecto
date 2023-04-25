@@ -14,6 +14,7 @@ import manchas from "../Items/imagenes/manchas.jpg"
 import { useEffect, useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import '../../css/style.css'
+import VerDescripcion from "../itemDescripcion/Descripcion"
 
 const ItemListContainer = ({greeting}) => {
 
@@ -23,7 +24,6 @@ const ItemListContainer = ({greeting}) => {
 
     useEffect(()=>{
 
-
         const ApiProductos = new Promise(
           (resolved, rejected) => {
              resolved([{
@@ -32,7 +32,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 200,
               id: 1,
               descripcion: "Cuadro impresionista, barco a vela navegando en calma mar.",
-              imagen: barco
+              imagen: barco,
+              categoria: "Realismo"
             },
             {
               nombre: "Las flores de mesa",
@@ -40,7 +41,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 150,
               id: 2,
               descripcion: "Naturaleza muerta, flores vibrantes en elegante florero de madera.",
-              imagen: flores
+              imagen: flores,
+              categoria: "Realismo"
             },
             {
               nombre: "La persistencia",
@@ -48,7 +50,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 250,
               id: 3,
               descripcion: "Explosión de color, vibrante mezcla de tonos y matices.",
-              imagen: guitarra
+              imagen: guitarra,
+              categoria: "Abstracto"
             },
             {
               nombre: "Florero",
@@ -56,7 +59,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 80,
               id: 4,
               descripcion: "Jardín floreciente, explosión de color en la naturaleza.",
-              imagen: floreschicas
+              imagen: floreschicas ,
+              categoria: "Realismo"
             },
             {
               nombre: "Mujer",
@@ -64,7 +68,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 300,
               id: 5,
               descripcion: "Mujer surreal, melena rosa y celeste en ambiente onírico.",
-              imagen: mujer
+              imagen: mujer,
+              categoria: "Abstracto"
             },
             {
               nombre: "Las ovejas",
@@ -72,7 +77,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 180,
               id: 6,
               descripcion: "Paisaje rural, suaves colinas, cielo azul y ovejas pastoriles.",
-              imagen: ovejitas
+              imagen: ovejitas,
+              categoria: "Realismo"
             },
             {
               nombre: "Las costas",
@@ -80,7 +86,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 350,
               id: 7,
               descripcion: "Costa escarpada, rocas bañadas por mar bravío y solitario.",
-              imagen: paisaje
+              imagen: paisaje,
+              categoria: "Realismo"
             },
             {
               nombre: "Stonehenge",
@@ -88,7 +95,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 280,
               id: 8,
               descripcion: "Misterio ancestral, círculos de piedra y leyendas perdidas.",
-              imagen: piedras
+              imagen: piedras,
+              categoria: "Realismo"
             },
             {
               nombre: "Las vacas",
@@ -96,14 +104,16 @@ const ItemListContainer = ({greeting}) => {
               precio: 120,
               id: 9,
               descripcion: "Paisaje campestre, serenas vacas pastando en prado verde",
-              imagen:vacas
+              imagen:vacas,
+              categoria: "Realismo"
             },  {
               nombre: "Benecia",
               tamaño: "40 x 50 cm",
               precio: 200,
               id: 10,
               descripcion: "Encanto italiano, canal pintoresco y arquitectura histórica en Venecia.",
-              imagen: benecia
+              imagen: benecia,
+              categoria: "Realismo"
             },
             {
               nombre: "Romeo y Juli",
@@ -111,7 +121,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 150,
               id: 11,
               descripcion: "Amor trágico, romance prohibido en Verona renacentista.",
-              imagen:europa
+              imagen:europa,
+              categoria: "Expresionismo"
             },
             {
               nombre: "La manchas",
@@ -119,7 +130,8 @@ const ItemListContainer = ({greeting}) => {
               precio: 250,
               id: 12,
               descripcion: "Abstracción cromática, manchas y trazos de intenso colorido.",
-              imagen:manchas
+              imagen:manchas,
+              categoria: "Abstracto"
             }]);
           });
           
@@ -132,10 +144,10 @@ const ItemListContainer = ({greeting}) => {
           .catch((error)=>{
             console.log("ta mal")
           })
-      })
+      },[])
     return ( 
-        <div className="itemh1">
-            <h1>Bienvenido/a
+        <div className="body-tienda">
+            <h1 className="h1-body">Bienvenido/a
             </h1>
             <div className="card-container">
 
@@ -145,6 +157,7 @@ const ItemListContainer = ({greeting}) => {
                         <img src={e.imagen} className="card-img-top" alt=""/>
                         <div className="card-body">
                         <h5 className="card-title">{e.nombre}</h5>
+                        <button onClick={VerDescripcion}></button>
                         <p className="card-text">Descripción: {e.descripcion}</p>
                         <p className="card-text">Tamaño: {e.tamaño}</p>
                         <p className='card-text'>Precio: $ {e.precio}</p>
@@ -156,7 +169,7 @@ const ItemListContainer = ({greeting}) => {
                     )
                 }
                 )}
-    </div>
+            </div>
         </div>
     )
     }

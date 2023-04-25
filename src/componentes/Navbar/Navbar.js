@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg alto">
 
         <div className="container-fluid bg-per">
           <Link to= {'/'} className="titulo"> Tienda Cheta</Link>
@@ -19,6 +19,14 @@ const Navbar = () => {
                 <Link to= {"/QuienesSomos"} className="nav-link active">
                 ¿Quienes Somos?
                 </Link>
+              </li>
+                <li className="nav-item dropdown">
+                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Categorias</a>
+                <ul className="dropdown-menu">
+                  <li><a className="dropdown-item" href="#">Realismo</a></li>
+                  <li><a className="dropdown-item" href="#">Expresionismo</a></li>
+                  <li><a className="dropdown-item" href="#">Abstracto</a></li>
+                </ul>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" href="index.html">Contacto</a>
